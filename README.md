@@ -6,3 +6,19 @@ This repository demonstrates:
 - Continuous refactoring and optimization
 - Production-ready deployment practices
 - Clean code principles for IaC
+
+
+## AWS Architecture
+
+![AWS Architecture Diagram](./docs/aws_architecture.jpg)
+
+
+---
+
+## Technology Stack
+
+<p align="center">
+  <img src="./docs/terraform-icon.svg" width="80" alt="Terraform"/>
+  <img src="./docs/bash-icon.svg" width="80" alt="Bash"/>
+  <img src="./docs/aws.svg" width="80" alt="AWS"/>
+</p>
