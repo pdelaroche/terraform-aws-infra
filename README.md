@@ -19,6 +19,8 @@ This repository demonstrates:
 
 <p align="center">
   <img src="./docs/terraform_icon.svg" width="80" alt="Terraform"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./docs/aws_icon.svg" width="80" alt="AWS"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./docs/bash_icon.svg" width="80" alt="Bash"/>
 </p>
