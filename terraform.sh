@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 AWS_PROFILE="cloudlab-dev"
@@ -21,7 +20,7 @@ plan () {
 
     export AWS_PROFILE=$AWS_PROFILE
     terraform init
-    terraform plan
+    terraform plan -var-file="dev.tfvars"
 }
 
 
@@ -30,7 +29,7 @@ apply () {
 
     export AWS_PROFILE=$AWS_PROFILE
     terraform init
-    terraform apply --auto-approve
+    terraform apply -var-file="dev.tfvars" --auto-approve
 }
 
 
@@ -38,8 +37,7 @@ destroy () {
     login_sso
 
     export AWS_PROFILE=$AWS_PROFILE
-    terraform destroy --auto-approve
-    terraform destroy --auto-approve
+    terraform destroy -var-file="dev.tfvars" --auto-approve
 }
 
 

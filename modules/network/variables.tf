@@ -13,7 +13,6 @@ variable "env_01" {
 variable "vpc_cidr" {
   description = "The CIDR block for the VPC"
   type        = string
-  default     = "172.16.0.0/16"
 }
 
 variable "bastion_public_ip" {
