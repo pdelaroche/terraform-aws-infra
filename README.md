@@ -18,8 +18,8 @@ This repository demonstrates:
 ## Technology Stack
 
 <p align="center">
-  <img src="./docs/aws.svg" width="80" alt="AWS"/>
   <img src="./docs/terraform-icon.svg" width="80" alt="Terraform"/>
+  <img src="./docs/aws.svg" width="80" alt="AWS"/>
   <img src="./docs/bash-icon.svg" width="80" alt="Bash"/>
 
 </p>
