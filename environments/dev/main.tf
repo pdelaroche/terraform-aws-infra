@@ -7,14 +7,11 @@ module "network" {
 
 
 # module "compute" {
-#   source                = "../../modules/compute"
-#   env_01                = var.env_01
-#   region                = var.region
-#   vpc_id                = module.network.vpc_id
-#   private_subnets       = module.network.private_subnets
-#   public_subnets        = module.network.public_subnets
-#   web_instance_type     = var.web_instance_type
-#   bastion_instance_type = var.bastion_instance_type
+#   source     = "../../modules/compute"
+#   env_01     = var.env_01
+#   region     = var.region
+#   vpc_id     = module.network.vpc_id
+#   subnet_ids = module.network.public_subnets
 # }
 
 
