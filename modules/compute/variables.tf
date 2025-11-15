@@ -1,3 +1,3 @@
-variable {
-  description = "AMI type for the EC2's intances"
-}
+# variable {
+#   description = "AMI type for the EC2's intances"
+# }
