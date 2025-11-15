@@ -1,7 +1,6 @@
 variable "region" {
   description = "The AWS region to deploy resources in"
-
-  type = string
+  type        = string
 }
 
 variable "env_01" {
@@ -14,7 +13,28 @@ variable "vpc_cidr" {
   type        = string
 }
 
-# variable "bastion_public_ip" {
-#   type = list(string)
-#   default = []
+variable "bastion_public_ip" {
+  description = "Public IP for bastion host (optional)"
+  type        = string
+  default     = null
+}
+
+# variable "private_subnets" {
+#   description = "Lista de subnets privadas donde se crearán los web servers"
+#   type        = list(string)
 # }
+
+# variable "public_subnets" {
+#   description = "Lista de subnets públicas donde se creará el bastion host"
+#   type        = list(string)
+# }
+
+variable "web_instance_type" {
+  description = "Instance type for the web server instances"
+  type        = string
+}
+
+variable "bastion_instance_type" {
+  description = "Instance type for the bastion host"
+  type        = string
+}
