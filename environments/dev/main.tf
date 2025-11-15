@@ -6,13 +6,13 @@ module "network" {
 }
 
 
-module "compute" {
-  source     = "../../modules/compute"
-  env_01     = var.env_01
-  region     = var.region
-  vpc_id     = module.network.vpc_id
-  subnet_ids = module.network.public_subnets
-}
+# module "compute" {
+#   source     = "../../modules/compute"
+#   env_01     = var.env_01
+#   region     = var.region
+#   vpc_id     = module.network.vpc_id
+#   subnet_ids = module.network.public_subnets
+# }
 
 
 # module "dns" {
