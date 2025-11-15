@@ -1,13 +1,11 @@
 variable "region" {
   description = "The AWS region to deploy resources in"
   type        = string
-  default     = "eu-west-1"
 }
 
 variable "env_01" {
   description = "The deployment environment"
   type        = string
-  default     = "dev"
 }
 
 variable "vpc_cidr" {
@@ -17,7 +15,6 @@ variable "vpc_cidr" {
 
 variable "bastion_public_ip" {
   description = "Lista de IPs permitidas para SSH al bastion"
-  type        = list(string)
   default     = null
 }
 
