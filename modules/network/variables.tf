@@ -14,7 +14,8 @@ variable "vpc_cidr" {
 }
 
 variable "bastion_public_ip" {
-  description = "Lista de IPs permitidas para SSH al bastion"
+  description = "List of public IPs allowed to access the bastion host via SSH (optional)"
+  type        = list(string)
   default     = null
 }
 
