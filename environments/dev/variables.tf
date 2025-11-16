@@ -1,10 +1,6 @@
 variable "region" {
   description = "The AWS region to deploy resources in"
   type        = string
-  validation {
-    condition     = var.region == "eu-west-1"
-    error_message = "The region must be 'eu-west-1' for the dev environment"
-  }
 }
 
 variable "env_01" {
@@ -32,6 +28,12 @@ variable "bastion_public_ip" {
   default     = null
 }
 
+variable "bastion_public_ip" {
+  description = "Public IP for bastion host (optional)"
+  type        = string
+  default     = null
+}
+
 # variable "private_subnets" {
 #   description = "Lista de subnets privadas donde se crearán los web servers"
 #   type        = list(string)
@@ -45,17 +47,9 @@ variable "bastion_public_ip" {
 variable "web_instance_type" {
   description = "Instance type for the web server instances"
   type        = string
-  validation {
-    condition     = var.web_instance_type == "t3.micro"
-    error_message = "The web_instance_type must be 't3.micro' for the dev environment"
-  }
 }
 
 variable "bastion_instance_type" {
   description = "Instance type for the bastion host"
   type        = string
-  validation {
-    condition     = var.bastion_instance_type == "t3.micro"
-    error_message = "The bastion_instance_type must be 't3.micro' for the dev environment"
-  }
 }

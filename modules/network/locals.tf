@@ -7,21 +7,31 @@ locals {
     "public_2"  = { type = "public", cidr = "172.16.4.0/24", az_index = 1, public_ip = true }
   }
 
+
+
+  # Filtramos el mapa principal para obtener solo la info de las subredes públicas
   eip_config = {
     for k, v in local.subnets_config : k => v
     if v.type == "public"
   }
 
+
+  # Filtramos el mapa principal para obtener solo la info de las subredes privadas
   private_subnets_config = {
     for k, v in local.subnets_config : k => v
     if v.type == "private"
   }
 
+
+  # Reglas comunes de Ingress para el Servidor Web (desde Internet)
   web_ingress_rules = {
     http  = { port = 80, cidr = "0.0.0.0/0", description = "HTTP desde Internet" },
     https = { port = 443, cidr = "0.0.0.0/0", description = "HTTPS desde Internet" }
   }
 
+
+
+  # Lista de IDs de Security Groups que necesitan Egreess global
   sg_with_global_egress = {
     bastion = aws_security_group.sg_bastion.id
     web     = aws_security_group.sg_web.id
