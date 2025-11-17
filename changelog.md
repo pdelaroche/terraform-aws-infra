@@ -1,3 +1,8 @@
+[1.0.3] - 2025-11-17
+
+- Add new scripts folder and comments terraform files
+
+
 [1.0.2] - 2025-11-16
 
 - Validation conditions in variables.tf for configuration safety
