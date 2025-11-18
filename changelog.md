@@ -1,4 +1,4 @@
-[2.0.3] - 2025-11-18
+[2.0.0] - 2025-11-18
 
 - Add Compute module with VPC synergy EC2 AMI selection
 
