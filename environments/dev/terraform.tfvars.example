@@ -1,0 +1,20 @@
+# Example terraform.tfvars file for the dev environment
+# Copy this file to terraform.tfvars and change the values as needed
+
+# AWS region where we will create our resources
+region = "eu-west-1"
+
+# Environment name (must be "dev" for this environment)
+env_01 = "dev"
+
+# Network range for the VPC (must be 172.16.0.0/16 for dev)
+vpc_cidr = "172.16.0.0/16"
+
+# Your public IP address to access the bastion server (change this to your real IP)
+bastion_public_ip = "203.0.113.0/32"
+
+# Instance size for the web servers
+web_instance_type = "t3.micro"
+
+# Instance size for the bastion server
+bastion_instance_type = "t3.micro"
