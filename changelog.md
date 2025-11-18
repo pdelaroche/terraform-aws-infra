@@ -1,3 +1,7 @@
+[2.0.3] - 2025-11-18
+
+- Add Compute module with VPC synergy EC2 AMI selection
+
 [1.0.3] - 2025-11-17
 
 - Add new scripts folder and comments terraform files

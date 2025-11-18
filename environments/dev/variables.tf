@@ -28,12 +28,6 @@ variable "bastion_public_ip" {
   default     = null
 }
 
-variable "bastion_public_ip" {
-  description = "Public IP for bastion host (optional)"
-  type        = string
-  default     = null
-}
-
 # variable "private_subnets" {
 #   description = "Lista de subnets privadas donde se crearán los web servers"
 #   type        = list(string)
